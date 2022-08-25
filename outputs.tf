@@ -1,4 +1,4 @@
-output "mysql_database" {
+output "database" {
   description = "mysql_database results"
   value = {
     for database in keys(mysql_database.database) :
@@ -11,7 +11,7 @@ output "mysql_database" {
   }
 }
 
-output "mysql_user" {
+output "user" {
   description = "mysql_user results"
   value = {
     for user in keys(mysql_user.user) :
