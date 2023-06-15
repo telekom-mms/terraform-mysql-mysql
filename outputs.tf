@@ -1,24 +1,41 @@
-output "mysql_database" {
-  description = "mysql_database results"
+output "user" {
+  description = "Outputs all attributes of resource_type."
   value = {
-    for database in keys(mysql_database.database) :
-    database => {
-      id                    = mysql_database.database[database].id
-      name                  = mysql_database.database[database].name
-      default_character_set = mysql_database.database[database].default_character_set
-      default_collation     = mysql_database.database[database].default_collation
+    for user in keys(mysql_user.user) :
+    user => {
+      for key, value in mysql_user.user[user] :
+      key => value
     }
   }
 }
 
-output "mysql_user" {
-  description = "mysql_user results"
+output "grant" {
+  description = "Outputs all attributes of resource_type."
   value = {
-    for user in keys(mysql_user.user) :
-    user => {
-      user = mysql_user.user[user].user
-      id   = mysql_user.user[user].id
-      host = mysql_user.user[user].host
+    for grant in keys(mysql_grant.grant) :
+    grant => {
+      for key, value in mysql_grant.grant[grant] :
+      key => value
+    }
+  }
+}
+
+output "variables" {
+  description = "Displays all configurable variables passed by the module. __default__ = predefined values per module. __merged__ = result of merging the default values and custom values passed to the module"
+  value = {
+    default = {
+      for variable in keys(local.default) :
+      variable => local.default[variable]
+    }
+    merged = {
+      user = {
+        for key in keys(var.user) :
+        key => local.user[key]
+      }
+      grant = {
+        for key in keys(var.grant) :
+        key => local.grant[key]
+      }
     }
   }
 }
