@@ -6,6 +6,14 @@
 *
 */
 
+resource "mysql_database" "database" {
+  for_each = local.database
+
+  name                  = local.database[each.key].name == "" ? each.key : local.database[each.key].name
+  default_character_set = local.database[each.key].default_character_set
+  default_collation     = local.database[each.key].default_collation
+}
+
 resource "mysql_user" "user" {
   for_each = local.user
 
@@ -15,8 +23,7 @@ resource "mysql_user" "user" {
   password           = local.user[each.key].password
   auth_plugin        = local.user[each.key].auth_plugin
   auth_string_hashed = local.user[each.key].auth_string_hashed
-  #aad_identity = local.user[each.key].aad_identity
-  tls_option = local.user[each.key].tls_option
+  tls_option         = local.user[each.key].tls_option
 }
 
 resource "mysql_grant" "grant" {
@@ -31,4 +38,10 @@ resource "mysql_grant" "grant" {
   roles      = local.grant[each.key].roles
   tls_option = local.grant[each.key].tls_option
   grant      = local.grant[each.key].grant
+}
+
+resource "mysql_role" "role" {
+  for_each = local.role
+
+  name = local.role[each.key].name == "" ? each.key : local.role[each.key].name
 }

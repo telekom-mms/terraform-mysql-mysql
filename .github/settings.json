@@ -1,0 +1,13 @@
+{
+  "repos": {
+    "description": "A Terraform module that manages the mysql resources from the mysql provider.",
+    "visibility": "public",
+    "default_branch": "main",
+    "topics": [
+      "terraform",
+      "mysql",
+      "user",
+      "grant"
+    ]
+  }
+}

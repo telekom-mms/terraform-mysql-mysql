@@ -1,9 +1,31 @@
+output "database" {
+  description = "Outputs all attributes of resource_type."
+  value = {
+    for database in keys(mysql_database.database) :
+    database => {
+      for key, value in mysql_database.database[database] :
+      key => value
+    }
+  }
+}
+
 output "user" {
   description = "Outputs all attributes of resource_type."
   value = {
     for user in keys(mysql_user.user) :
     user => {
       for key, value in mysql_user.user[user] :
+      key => value
+    }
+  }
+}
+
+output "role" {
+  description = "Outputs all attributes of resource_type."
+  value = {
+    for role in keys(mysql_role.role) :
+    role => {
+      for key, value in mysql_role.role[role] :
       key => value
     }
   }
@@ -28,9 +50,17 @@ output "variables" {
       variable => local.default[variable]
     }
     merged = {
+      database = {
+        for key in keys(var.database) :
+        key => local.database[key]
+      }
       user = {
         for key in keys(var.user) :
         key => local.user[key]
+      }
+      role = {
+        for key in keys(var.role) :
+        key => local.role[key]
       }
       grant = {
         for key in keys(var.grant) :
