@@ -1,12 +1,29 @@
 # Changelog
 
-## [2.0.0](https://github.com/telekom-mms/terraform-mysql-mysql/tree/2.0.0) (2023-07-19)
+## [2.0.1](https://github.com/telekom-mms/terraform-mysql-mysql/tree/2.0.1) (2023-10-25)
 
-[Full Changelog](https://github.com/telekom-mms/terraform-mysql-mysql/compare/1.0.0...2.0.0)
+[Full Changelog](https://github.com/telekom-mms/terraform-mysql-mysql/compare/2.0.0...2.0.1)
 
 **Closed issues:**
 
 - Dependency Dashboard [\#3](https://github.com/telekom-mms/terraform-mysql-mysql/issues/3)
+
+## [2.0.0](https://github.com/telekom-mms/terraform-mysql-mysql/tree/2.0.0) (2023-07-19)
+
+[Full Changelog](https://github.com/telekom-mms/terraform-mysql-mysql/compare/1.0.0...2.0.0)
+
+**Merged pull requests:**
+
+- Refactoring [\#11](https://github.com/telekom-mms/terraform-mysql-mysql/pull/11) ([michaelamattes](https://github.com/michaelamattes))
+- add Renovate Dependency Dashboard and automatic merge on patch updates [\#10](https://github.com/telekom-mms/terraform-mysql-mysql/pull/10) ([michaelamattes](https://github.com/michaelamattes))
+- Update actions/checkout action to v3.2.0 [\#9](https://github.com/telekom-mms/terraform-mysql-mysql/pull/9) ([renovate[bot]](https://github.com/apps/renovate))
+- Update actions/checkout action to v3.1.0 [\#8](https://github.com/telekom-mms/terraform-mysql-mysql/pull/8) ([renovate[bot]](https://github.com/apps/renovate))
+- Update hashicorp/setup-terraform action to v2 [\#7](https://github.com/telekom-mms/terraform-mysql-mysql/pull/7) ([renovate[bot]](https://github.com/apps/renovate))
+- Update creyD/prettier\_action action to v4 [\#6](https://github.com/telekom-mms/terraform-mysql-mysql/pull/6) ([renovate[bot]](https://github.com/apps/renovate))
+- Update actions/checkout action to v3 [\#5](https://github.com/telekom-mms/terraform-mysql-mysql/pull/5) ([renovate[bot]](https://github.com/apps/renovate))
+- Update github-actions-x/commit action to v2.9 [\#4](https://github.com/telekom-mms/terraform-mysql-mysql/pull/4) ([renovate[bot]](https://github.com/apps/renovate))
+- Update creyD/prettier\_action action to v3.3 [\#2](https://github.com/telekom-mms/terraform-mysql-mysql/pull/2) ([renovate[bot]](https://github.com/apps/renovate))
+- Update actions/checkout action to v2.4.2 [\#1](https://github.com/telekom-mms/terraform-mysql-mysql/pull/1) ([renovate[bot]](https://github.com/apps/renovate))
 
 ## [1.0.0](https://github.com/telekom-mms/terraform-mysql-mysql/tree/1.0.0) (2022-07-25)
 
