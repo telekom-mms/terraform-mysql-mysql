@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.0.1](https://github.com/telekom-mms/terraform-mysql-mysql/tree/2.0.1) (2023-10-25)
+## [2.0.1](https://github.com/telekom-mms/terraform-mysql-mysql/tree/2.0.1) (2023-11-16)
 
 [Full Changelog](https://github.com/telekom-mms/terraform-mysql-mysql/compare/2.0.0...2.0.1)
 
