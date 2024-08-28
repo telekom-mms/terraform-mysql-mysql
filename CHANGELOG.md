@@ -1,12 +1,12 @@
 # Changelog
 
-## [2.0.1](https://github.com/telekom-mms/terraform-mysql-mysql/tree/2.0.1) (2023-11-20)
+## [2.0.1](https://github.com/telekom-mms/terraform-mysql-mysql/tree/2.0.1) (2024-08-28)
 
 [Full Changelog](https://github.com/telekom-mms/terraform-mysql-mysql/compare/2.0.0...2.0.1)
 
-**Closed issues:**
+**Merged pull requests:**
 
-- Dependency Dashboard [\#3](https://github.com/telekom-mms/terraform-mysql-mysql/issues/3)
+- run terrascan in test setting directory [\#13](https://github.com/telekom-mms/terraform-mysql-mysql/pull/13) ([michaelamattes](https://github.com/michaelamattes))
 
 ## [2.0.0](https://github.com/telekom-mms/terraform-mysql-mysql/tree/2.0.0) (2023-07-19)
 
