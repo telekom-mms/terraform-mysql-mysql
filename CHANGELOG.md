@@ -1,12 +1,16 @@
 # Changelog
 
-## [2.0.1](https://github.com/telekom-mms/terraform-mysql-mysql/tree/2.0.1) (2024-08-28)
+## [2.0.1](https://github.com/telekom-mms/terraform-mysql-mysql/tree/2.0.1) (2026-03-30)
 
 [Full Changelog](https://github.com/telekom-mms/terraform-mysql-mysql/compare/2.0.0...2.0.1)
 
+**Implemented enhancements:**
+
+- update config, make module usable with terraform or opentofu [\#15](https://github.com/telekom-mms/terraform-mysql-mysql/pull/15) ([mikaEz](https://github.com/mikaEz))
+
 **Merged pull requests:**
 
-- run terrascan in test setting directory [\#13](https://github.com/telekom-mms/terraform-mysql-mysql/pull/13) ([michaelamattes](https://github.com/michaelamattes))
+- run terrascan in test setting directory [\#13](https://github.com/telekom-mms/terraform-mysql-mysql/pull/13) ([mikaEz](https://github.com/mikaEz))
 
 ## [2.0.0](https://github.com/telekom-mms/terraform-mysql-mysql/tree/2.0.0) (2023-07-19)
 
@@ -14,8 +18,8 @@
 
 **Merged pull requests:**
 
-- Refactoring [\#11](https://github.com/telekom-mms/terraform-mysql-mysql/pull/11) ([michaelamattes](https://github.com/michaelamattes))
-- add Renovate Dependency Dashboard and automatic merge on patch updates [\#10](https://github.com/telekom-mms/terraform-mysql-mysql/pull/10) ([michaelamattes](https://github.com/michaelamattes))
+- Refactoring [\#11](https://github.com/telekom-mms/terraform-mysql-mysql/pull/11) ([mikaEz](https://github.com/mikaEz))
+- add Renovate Dependency Dashboard and automatic merge on patch updates [\#10](https://github.com/telekom-mms/terraform-mysql-mysql/pull/10) ([mikaEz](https://github.com/mikaEz))
 - Update actions/checkout action to v3.2.0 [\#9](https://github.com/telekom-mms/terraform-mysql-mysql/pull/9) ([renovate[bot]](https://github.com/apps/renovate))
 - Update actions/checkout action to v3.1.0 [\#8](https://github.com/telekom-mms/terraform-mysql-mysql/pull/8) ([renovate[bot]](https://github.com/apps/renovate))
 - Update hashicorp/setup-terraform action to v2 [\#7](https://github.com/telekom-mms/terraform-mysql-mysql/pull/7) ([renovate[bot]](https://github.com/apps/renovate))
