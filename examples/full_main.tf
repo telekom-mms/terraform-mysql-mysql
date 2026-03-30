@@ -6,7 +6,7 @@ resource "random_password" "password" {
 }
 
 module "database" {
-  source = "registry.terraform.io/telekom-mms/database/azurerm"
+  source = "telekom-mms/database/azurerm"
   mysql_flexible_server = {
     mysql-mms = {
       location               = "westeurope"
@@ -20,7 +20,7 @@ module "database" {
 }
 
 module "mysql" {
-  source = "registry.terraform.io/telekom-mms/mysql/mysql"
+  source = "telekom-mms/mysql/mysql"
   database = {
     application = {
       default_character_set = "utf8mb4"
